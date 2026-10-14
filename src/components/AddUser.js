@@ -19,7 +19,7 @@ function AddUser() {
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
     } else if (formData.name.trim().length < 3) {
-      newErrors.name = 'Name must be at least 3 characters';
+      newErrors.name = 'Name must be at least 3 characters gfdgfdg';
     }
 
     if (!formData.email.trim()) {
