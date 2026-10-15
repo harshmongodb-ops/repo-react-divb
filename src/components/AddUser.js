@@ -79,7 +79,7 @@ function AddUser() {
           data.append('image', image);
         }
 
-        const response = await axios.post("http://localhost:5000/api/add-user",data,{
+        const response = await axios.post("https://divb-backend-2.onrender.com/api/add-user",data,{
           headers:{
             "Content-Type":"multipart/form-data",
             "Authorization":"Bearer "+token

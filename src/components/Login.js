@@ -38,7 +38,7 @@ function Login() {
      //console.log(formData)
     // API Calling   
     try {
-      const response = await axios.post("http://localhost:5000/api/login",formData)
+      const response = await axios.post("https://divb-backend-2.onrender.com/api/login",formData)
       if(response.data.status == 1) {
         localStorage.setItem('token',response.data.token)
         Navigate("/dashboard")

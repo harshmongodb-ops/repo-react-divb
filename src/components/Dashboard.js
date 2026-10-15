@@ -15,7 +15,7 @@ function Dashboard() {
   const getUserData = async() => {
     try {
 
-        const response = await axios.get("http://localhost:5000/api/get-user",{
+        const response = await axios.get("https://divb-backend-2.onrender.com/api/get-user",{
           headers:{
             "Content-Type":"Application/JSON",
             "Authorization":"Bearer "+token
@@ -30,7 +30,7 @@ function Dashboard() {
 
   const handleDelete = async(id) => {
     try {
-        const response = await axios.delete(`http://localhost:5000/api/delete-user/${id}`,{
+        const response = await axios.delete(`https://divb-backend-2.onrender.com/api/delete-user/${id}`,{
           headers:{
             "Content-Type":"Application/JSON",
             "Authorization":"Bearer "+token
